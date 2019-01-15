@@ -7,14 +7,25 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BaseTest {
 
-    @FindBy(xpath = "//td[contains(text(),'User: farhad ali')]")
-    WebElement user;
+
+    @FindBy(xpath = "//a[contains(@href,'logout')]")
+    WebElement logoutBtn;
+
+    @FindBy(xpath = "//td[contains(text(),'farhad ali')]")
+    WebElement userNameLabel;
 
     public HomePage() {
         PageFactory.initElements(driver, this);
     }
 
-    public String getUserName(){
-        return user.getText();
+    public boolean verifyLogoutButton() {
+        return logoutBtn.isDisplayed();
+
     }
+
+    public boolean verifyUsernameLable() {
+        return userNameLabel.isDisplayed();
+    }
+
 }
+

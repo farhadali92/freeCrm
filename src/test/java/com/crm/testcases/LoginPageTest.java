@@ -12,23 +12,38 @@ public class LoginPageTest extends BaseTest {
     LoginPage loginPage;
     HomePage homePage;
 
+    public LoginPageTest() {
+        super();
+    }
+
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         initialisation();
         loginPage = new LoginPage();
     }
 
     @Test
-    public void verifyPageTitleTest(){
+    public void verifyPageTitleTest() {
         String pageTitle = loginPage.getPageTitle();
-        Assert.assertEquals(pageTitle,"#1 Free CRM software in the cloud for sales and service" );
+        Assert.assertEquals(pageTitle, "#1 Free CRM software in the cloud for sales and service");
     }
 
+    @Test
+    public void crmLogoImageTest() {
+        boolean flag = loginPage.validateCrmLogo();
+        Assert.assertTrue(flag);
+    }
 
-
+    @Test
+    public void loginTest() {
+        loginPage.enterUsername(prop.getProperty("username"));
+        loginPage.enterPassword(prop.getProperty("password"));
+        homePage = loginPage.clickLoginBtn();
+        /* unable to verify the logout button or unable to verify the username */
+    }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 }
