@@ -39,7 +39,9 @@ public class LoginPageTest extends BaseTest {
         loginPage.enterUsername(prop.getProperty("username"));
         loginPage.enterPassword(prop.getProperty("password"));
         homePage = loginPage.clickLoginBtn();
-        /* unable to verify the logout button or unable to verify the username */
+        boolean flag = homePage.verifyUsernameLable();
+        Assert.assertTrue(flag);
+        homePage.clickLogoutButton();
     }
 
     @AfterMethod

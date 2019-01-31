@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="freeCrmTest" />
-        <module name="qa-automation-challenge" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qa-automation-challenge" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
