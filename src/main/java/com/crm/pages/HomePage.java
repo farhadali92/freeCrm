@@ -10,12 +10,12 @@ public class HomePage extends BaseTest {
 
 
     @FindBy(xpath = "//a[contains(@href,'logout')]")
-    WebElement logoutBtn;
+    private WebElement logoutBtn;
 
     @FindBy(xpath = "//td[contains(text(),'farhad ali')]")
-    WebElement userNameLabel;
+    private WebElement userNameLabel;
 
-    public HomePage() {
+    HomePage() {
         PageFactory.initElements(driver, this);
     }
 
@@ -30,5 +30,6 @@ public class HomePage extends BaseTest {
         return userNameLabel.isDisplayed();
     }
 
+    public String  verifyHomePageTitle(){return driver.getTitle();}
 }
 

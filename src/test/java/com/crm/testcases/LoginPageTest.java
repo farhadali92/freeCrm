@@ -9,10 +9,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginPageTest extends BaseTest {
-    LoginPage loginPage;
-    HomePage homePage;
+    private LoginPage loginPage;
+    private HomePage homePage;
 
-    public LoginPageTest() {
+    LoginPageTest() {
         super();
     }
 

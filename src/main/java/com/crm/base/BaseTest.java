@@ -19,7 +19,9 @@ public class BaseTest {
     public BaseTest() {
         try {
             prop = new Properties();
-            FileInputStream inputStream = new FileInputStream("D:\\FA Automation Projects\\freeCrmTest"
+            String projectPath = System.getProperty("user.dir");
+
+            FileInputStream inputStream = new FileInputStream(projectPath
                     + "\\src\\main\\java\\com\\crm\\config\\config.properties");
             prop.load(inputStream);
         } catch (FileNotFoundException e) {
@@ -29,7 +31,7 @@ public class BaseTest {
         }
     }
 
-    public static void initialisation() {
+    protected static void initialisation() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
