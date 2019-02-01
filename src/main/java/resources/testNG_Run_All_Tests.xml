@@ -3,15 +3,9 @@
 <suite name="free CRM test Suit">
 
     <test name="free CRM test cases">
-        <groups>
-            <run>
-                <exclude name="ui" />
-            </run>
-        </groups>
         <classes>
             <class name="com.crm.testcases.LoginPageTest" />
             <class name="com.crm.testcases.LoginPageTest" />
-
         </classes>
     </test>
 
