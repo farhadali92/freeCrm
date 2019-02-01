@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91984dbe-be2e-411b-9ce2-16cbf7068edc" name="Default Changelist" comment="added project path">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crm/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crm/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crm/base/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/crm/testcases/LoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/crm/testcases/LoginPageTest.class" afterDir="false" />
+    <list default="true" id="91984dbe-be2e-411b-9ce2-16cbf7068edc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/crm/testcases/HomePageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/crm/testcases/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="136">
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/base/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1548969076913" expanded="false" signature="23:289" ph="..." />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/crm/testcases/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="325">
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/crm/utils/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/crm/testcases/LoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/crm/testcases/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/base/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/crm/testcases/HomePageTest.java" />
       </list>
     </option>
   </component>
@@ -202,7 +199,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548959385725" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549032107518" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="RecentsManager">
@@ -384,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548959225115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added project path">
+      <created>1549031838180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549031838180</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -431,7 +435,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2118003" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -445,12 +449,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49938875" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49938875" weight="0.32922733" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49938875" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012225" side_tool="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49938875" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info active="true" anchor="right" id="Ant Build" order="1" visible="true" weight="0.24962178" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" weight="0.3290469" />
@@ -577,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/crm/testcases/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="136">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -588,7 +592,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/base/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1548969076913" expanded="false" signature="23:289" ph="..." />
@@ -598,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/crm/testcases/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        <state relative-caret-position="325">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
