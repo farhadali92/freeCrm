@@ -22,13 +22,14 @@ public class HomePageTest extends BaseTest {
     public void setup() {
         initialisation();
         loginPage = new LoginPage();
+        loginPage.enterUsername(prop.getProperty("username"));
+        loginPage.enterPassword(prop.getProperty("password"));
+        homePage = loginPage.clickLoginBtn();
     }
 
     @Test
     public void verifyThatUserCanLoginAndCheckHomePageTitleTest() {
-        loginPage.enterUsername(prop.getProperty("username"));
-        loginPage.enterPassword(prop.getProperty("password"));
-        homePage = loginPage.clickLoginBtn();
+
         String homePageTitle = homePage.verifyHomePageTitle();
         Assert.assertEquals("CRMPRO",homePageTitle);
     }

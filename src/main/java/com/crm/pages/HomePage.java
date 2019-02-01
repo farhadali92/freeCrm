@@ -3,6 +3,7 @@ package com.crm.pages;
 import com.crm.base.BaseTest;
 import com.crm.utils.TestUtil;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -10,13 +11,16 @@ public class HomePage extends BaseTest {
 
 
     @FindBy(xpath = "//a[contains(@href,'logout')]")
-    private WebElement logoutBtn;
+    WebElement logoutBtn;
 
     @FindBy(xpath = "//td[contains(text(),'farhad ali')]")
-    private WebElement userNameLabel;
+    WebElement userNameLabel;
 
     @FindBy(xpath = "//a[contains(text(), 'Contacts')]")
     WebElement contactsLink;
+
+    @FindBy(xpath = "//a[@title = 'New Contact']")
+    WebElement subMenuNewContact;
 
     HomePage() {
         PageFactory.initElements(driver, this);
@@ -28,7 +32,6 @@ public class HomePage extends BaseTest {
     }
 
     public boolean verifyUsernameLable() {
-
         TestUtil.switchToPanel();
         return userNameLabel.isDisplayed();
     }
@@ -43,6 +46,13 @@ public class HomePage extends BaseTest {
         return new ContactsPage();
     }
 
+    public ContactsPage clickNewContactSubMenu(){
+        Actions action = new Actions(driver);
+        TestUtil.switchToPanel();
+        action.moveToElement(contactsLink).build().perform();
+        subMenuNewContact.click();
+        return new ContactsPage();
 
+    }
 }
 
