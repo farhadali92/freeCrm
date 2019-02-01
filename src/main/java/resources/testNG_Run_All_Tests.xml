@@ -6,6 +6,7 @@
         <classes>
             <class name="com.crm.testcases.LoginPageTest" />
             <class name="com.crm.testcases.LoginPageTest" />
+            <class name="com.crm.testcases.ContactsPageTest"/>
         </classes>
     </test>
 

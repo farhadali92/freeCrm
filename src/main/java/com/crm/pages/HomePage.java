@@ -15,21 +15,34 @@ public class HomePage extends BaseTest {
     @FindBy(xpath = "//td[contains(text(),'farhad ali')]")
     private WebElement userNameLabel;
 
+    @FindBy(xpath = "//a[contains(text(), 'Contacts')]")
+    WebElement contactsLink;
+
     HomePage() {
         PageFactory.initElements(driver, this);
     }
 
     public void clickLogoutButton() {
-            //driver.switchTo().frame("mainpanel");
-            logoutBtn.click();
+        TestUtil.switchToPanel();
+        logoutBtn.click();
     }
 
     public boolean verifyUsernameLable() {
-        //driver.switchTo().frame("mainpanel");
-        TestUtil.switchToPanel("mainpanel");
+
+        TestUtil.switchToPanel();
         return userNameLabel.isDisplayed();
     }
 
-    public String  verifyHomePageTitle(){return driver.getTitle();}
+    public String verifyHomePageTitle() {
+        return driver.getTitle();
+    }
+
+    public ContactsPage openContactsPage() {
+        TestUtil.switchToPanel();
+        contactsLink.click();
+        return new ContactsPage();
+    }
+
+
 }
 
