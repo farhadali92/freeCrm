@@ -13,11 +13,12 @@ public class BaseTest {
 
     protected static WebDriver driver;
     protected static Properties prop;
+    protected static String projectPath = System.getProperty("user.dir");
 
     public BaseTest() {
         try {
             prop = new Properties();
-            String projectPath = System.getProperty("user.dir");
+
 
             FileInputStream inputStream = new FileInputStream(projectPath
                     + "\\src\\main\\java\\com\\crm\\config\\config.properties");
