@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="free CRM test Suit">
 
+    <listeners>
+        <listener class-name="com.crm.extentReportListener.ExtentReportListener"/>
+    </listeners>
+
     <test name="free CRM test cases">
         <classes>
             <class name="com.crm.testcases.LoginPageTest" />

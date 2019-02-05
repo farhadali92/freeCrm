@@ -1,12 +1,17 @@
 package com.crm.utils;
 
 import com.crm.base.BaseTest;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 public class TestUtil extends BaseTest {
     public static long PAGE_LOAD_TIMEOUT = 20;
@@ -37,8 +42,12 @@ public class TestUtil extends BaseTest {
         }
         return data;
 
-
     }
 
 
+    public static void takeScreenshotAtEndOfTest() throws IOException {
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File(projectPath + "/screenshots/" + System.currentTimeMillis() + ".png"));
+
+    }
 }
